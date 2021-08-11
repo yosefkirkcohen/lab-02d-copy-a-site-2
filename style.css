@@ -14,12 +14,13 @@ html, body {
 }
 
 .craigslist {
-
+    text-align: center;
 }
 
 .middle-column {
     display: grid;
     grid-template-rows: 1fr 10fr ;
+    text-align: center;
 }
 .categories {
     display: grid;
@@ -36,4 +37,9 @@ html, body {
 .column-3 {
     display: grid;
     grid-template-rows: 8fr 1fr 0.5fr;
+}
+.side-column {
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+    text-align: center;
 }
