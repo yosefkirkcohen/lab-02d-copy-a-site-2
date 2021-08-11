@@ -1,34 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+
 html, body {
     height: 100%;
     width: 100%;
 }
-* {
-    border: solid 1px black;
-    
-}
+
+/* * {
+    border: solid 1px black;  
+} */
 
 .whole {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr 0.5fr;
+    grid-template-columns: 1fr 4fr 1.5fr;
 }
 
 .craigslist {
     text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
+    border-left: solid 1px rgb(184, 184, 184);
+    border-right: solid 1px rgb(184, 184, 184);
+    background-color: rgb(235, 235, 235);
+    color:blue;
+    margin-left: 150px;
 }
 
 .middle-column {
     display: grid;
-    grid-template-rows: 1fr 10fr ;
+    grid-template-rows: 0.5fr 10fr ;
     text-align: center;
 }
 .categories {
     display: grid;
     grid-template-columns: 1fr 1fr 0.75fr ;
+    color: blue;
 }
 .column-1 {
     display: grid;
     grid-template-rows: 1fr 1.5fr 2fr;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .column-2 {
     display: grid;
@@ -37,9 +52,47 @@ html, body {
 .column-3 {
     display: grid;
     grid-template-rows: 8fr 1fr 0.5fr;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .side-column {
     display: grid;
     grid-template-rows: 1fr 20fr;
     text-align: center;
+    border-left: solid 1px rgb(184, 184, 184);
+    border-right: solid 1px rgb(184, 184, 184);
+    background-color: rgb(235, 235, 235);
+    margin-right: 200px;
+}
+
+.monterey-bay {
+    border-top: solid 1px rgb(184, 184, 184);
+    border-bottom: solid 1px rgb(184, 184, 184);
+    background-color: rgb(235, 235, 235);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.background-bar {
+    border-top: solid 1px rgb(184, 184, 184);
+    border-bottom: solid 1px rgb(184, 184, 184);
+    background-color: rgb(235, 235, 235);
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+.lorem {
+    columns: 100px 2;
+}
+.lorem-2 {
+    column-count: 1;
+    column-width: 50px;
+}
+.craigslist-name {
+    font-size: 3rem;
 }
